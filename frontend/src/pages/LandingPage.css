@@ -233,6 +233,7 @@
   position: absolute;
   inset: 0;
   background: var(--gradient-card);
+  pointer-events: none;
 }
 
 .cta-title {

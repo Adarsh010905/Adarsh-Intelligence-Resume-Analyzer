@@ -41,10 +41,17 @@ async function request(endpoint, options = {}, isFormData = false) {
 }
 
 async function handleResponse(response) {
+  // Handle 204 No Content (logout returns this)
+  if (response.status === 204 || response.headers.get('content-length') === '0') {
+    if (!response.ok) throw new Error('Request failed');
+    return {};
+  }
+
   let data;
   try {
     data = await response.json();
   } catch {
+    if (response.ok) return {};
     data = { message: 'Server returned an unexpected response' };
   }
 

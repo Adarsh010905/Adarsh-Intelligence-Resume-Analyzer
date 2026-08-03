@@ -111,7 +111,7 @@ function LandingPage() {
               Join thousands of job seekers who improved their chances with AI-powered analysis.
               It's completely free.
             </p>
-            <Link to={isLoggedIn ? '/analyze' : '/register'} className="btn-primary" style={{ padding: '14px 40px', fontSize: '1rem' }}>
+            <Link to={isLoggedIn ? '/analyze' : '/register'} className="btn-primary" style={{ padding: '14px 40px', fontSize: '1rem', position: 'relative', zIndex: 1 }}>
               {isLoggedIn ? 'Analyze Now →' : 'Create Free Account →'}
             </Link>
           </div>
