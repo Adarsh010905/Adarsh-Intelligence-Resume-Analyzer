@@ -26,7 +26,7 @@ function LandingPage() {
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <h1 className="hero-title">
             Land Your Dream Job with{' '}
-            <span className="gradient-text">Adarsh Intelligence</span>
+            <span className="gradient-text">Adarsh Intelligence Resume Analyzer</span>
           </h1>
 
           <p className="hero-subtitle">
