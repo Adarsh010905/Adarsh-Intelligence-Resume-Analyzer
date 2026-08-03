@@ -60,6 +60,9 @@
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
   --transition-slow: 400ms ease;
+  --color-navbar-bg: rgba(10, 10, 15, 0.85);
+  --color-nav-hover: rgba(255, 255, 255, 0.06);
+  --color-dropdown-bg: #16161f;
 }
 
 [data-theme="light"] {
@@ -79,6 +82,9 @@
   --gradient-bg: radial-gradient(ellipse at top, rgba(139, 92, 246, 0.08) 0%, transparent 60%),
                  radial-gradient(ellipse at bottom right, rgba(59, 130, 246, 0.06) 0%, transparent 50%);
   --gradient-card: linear-gradient(135deg, rgba(139, 92, 246, 0.06), rgba(59, 130, 246, 0.03));
+  --color-navbar-bg: rgba(244, 244, 249, 0.90);
+  --color-nav-hover: rgba(0, 0, 0, 0.05);
+  --color-dropdown-bg: #ffffff;
 }
 
 *, *::before, *::after {
