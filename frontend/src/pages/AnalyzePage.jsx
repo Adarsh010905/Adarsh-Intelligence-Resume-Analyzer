@@ -155,7 +155,7 @@ function AnalyzePage() {
 
           <div className="input-panels">
             <div className="input-panel">
-              <label className="form-label">Your Resume</label>
+              <label className="form-label">Your Resume <span style={{ color: 'var(--color-error)' }}>*</span></label>
               {inputMethod === 'file' ? (
                 <div className={`file-drop-zone ${resumeFile ? 'has-file' : ''}`} onDrop={handleDrop} onDragOver={e => e.preventDefault()} onClick={() => fileInputRef.current?.click()}>
                   <input ref={fileInputRef} type="file" accept=".pdf" onChange={handleFileChange} style={{ display: 'none' }} id="resume-file" />
