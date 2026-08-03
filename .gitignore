@@ -18,9 +18,7 @@ staticfiles/
 db.sqlite3
 
 node_modules/
-build/
 .vite/
-!frontend/dist/
 
 *.log
 npm-debug.log*
@@ -38,8 +36,6 @@ desktop.ini
 *~
 
 *.egg-info/
-dist/
-build/
 *.egg
 
 .coverage
