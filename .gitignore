@@ -18,9 +18,9 @@ staticfiles/
 db.sqlite3
 
 node_modules/
-dist/
 build/
 .vite/
+!frontend/dist/
 
 *.log
 npm-debug.log*

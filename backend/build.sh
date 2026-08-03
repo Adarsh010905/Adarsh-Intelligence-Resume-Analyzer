@@ -1,21 +1,17 @@
 #!/usr/bin/env bash
 set -o errexit
 
-echo "==> Installing Node.js..."
-curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
-apt-get install -y nodejs
-
-echo "==> Building React frontend..."
-cd ../frontend
-npm install
-npm run build
-echo "==> React build complete."
-
-echo "==> Setting up Django backend..."
-cd ../backend
+echo "==> Installing Python dependencies..."
 pip install --upgrade pip
 pip install -r requirements.txt
+
+echo "==> Downloading spaCy model..."
 python -m spacy download en_core_web_sm
+
+echo "==> Collecting static files..."
 python manage.py collectstatic --noinput
+
+echo "==> Running database migrations..."
 python manage.py migrate
-echo "==> All done!"
+
+echo "==> Build complete!"
