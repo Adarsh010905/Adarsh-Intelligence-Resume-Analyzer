@@ -31,7 +31,11 @@ function ProtectedRoute({ children }) {
 
 function PublicOnlyRoute({ children }) {
   const { isLoggedIn, isLoading } = useAuth();
-  if (isLoading) return null;
+  if (isLoading) return (
+    <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div className="spinner" style={{ width: 40, height: 40, borderWidth: 3 }}></div>
+    </div>
+  );
   if (isLoggedIn) return <Navigate to="/dashboard" replace />;
   return children;
 }
