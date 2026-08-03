@@ -129,7 +129,7 @@ function AnalyzePage() {
       <div className="container">
         <div className="analyze-header">
           <h1 className="analyze-title">
-            <span className="gradient-text">Adarsh Intelligence Resume Analyzer</span>
+            <span className="gradient-text">AI Resume Analyzer</span>
           </h1>
           <p className="analyze-subtitle">
             Upload your resume and paste a job description to get an instant AI-powered match score and improvement suggestions.

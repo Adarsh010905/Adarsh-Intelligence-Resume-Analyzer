@@ -28,7 +28,7 @@ function Navbar() {
             </svg>
           </div>
           <span className="logo-text">
-            <span className="gradient-text">Adarsh</span>Intelligence
+            AI<span className="gradient-text">Resume</span>
           </span>
         </Link>
 

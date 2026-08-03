@@ -26,11 +26,11 @@ function LandingPage() {
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <h1 className="hero-title">
             Land Your Dream Job with{' '}
-            <span className="gradient-text">Adarsh Intelligence Resume Analysis</span>
+            <span className="gradient-text">AI Resume Analyzer</span>
           </h1>
 
           <p className="hero-subtitle">
-            Upload your resume and paste any job description. Our Adarsh Intelligence
+            Upload your resume and paste any job description. Our AI Resume Analyzer
             instantly scores your match, identifies skill gaps, and gives you actionable
             feedback to get the interview.
           </p>
@@ -108,7 +108,7 @@ function LandingPage() {
               Ready to <span className="gradient-text">Optimize</span> Your Resume?
             </h2>
             <p className="cta-desc">
-              Join thousands of job seekers who improved their chances with Adarsh Intelligence analysis.
+              Join thousands of job seekers who improved their chances with AI-powered analysis.
               It's completely free.
             </p>
             <Link to={isLoggedIn ? '/analyze' : '/register'} className="btn-primary" style={{ padding: '14px 40px', fontSize: '1rem' }}>
@@ -119,7 +119,7 @@ function LandingPage() {
       </section>
 
       <footer className="landing-footer">
-        <p>Built with ❤️ by a Python Full Stack Developer • Django + React + Adarsh Intelligence</p>
+        <p>Built with ❤️ by a Python Full Stack Developer • Django + React + Groq AI</p>
       </footer>
     </div>
   );

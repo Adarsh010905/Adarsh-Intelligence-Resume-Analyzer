@@ -55,7 +55,7 @@ function RegisterPage() {
               </svg>
             </div>
             <h2 className="brand-title">
-              <span className="gradient-text">Adarsh</span>Intelligence
+              AI<span className="gradient-text">Resume</span>
             </h2>
             <p className="brand-tagline">Join thousands of job seekers</p>
             <div className="brand-features">

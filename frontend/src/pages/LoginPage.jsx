@@ -40,7 +40,7 @@ function LoginPage() {
               </svg>
             </div>
             <h2 className="brand-title">
-              <span className="gradient-text">Adarsh</span>Intelligence
+              AI<span className="gradient-text">Resume</span>
             </h2>
             <p className="brand-tagline">Analyze. Improve. Get Hired.</p>
             <div className="brand-features">
