@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+REACT_BUILD_DIR = BASE_DIR.parent / 'frontend' / 'dist'
 
 SECRET_KEY = os.environ.get('SECRET_KEY', 'fallback-insecure-key-change-this!')
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
@@ -124,6 +125,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+WHITENOISE_ROOT = REACT_BUILD_DIR if REACT_BUILD_DIR.exists() else None
+WHITENOISE_INDEX_FILE = True
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
