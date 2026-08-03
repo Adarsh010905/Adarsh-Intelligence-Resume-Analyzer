@@ -1,0 +1,71 @@
+# ============================================================
+# REQUIREMENTS.TXT — This file lists ALL Python libraries
+# our backend needs. Think of it like a shopping list.
+# Run: pip install -r requirements.txt to install everything.
+# ============================================================
+
+# --- Django Core ---
+# Django is our web framework. It gives us routing, ORM,
+# admin panel, and much more out of the box.
+Django==4.2.14
+
+# Django REST Framework (DRF) turns our Django app into
+# an API server that React can talk to via HTTP.
+djangorestframework==3.15.2
+
+# Allows CORS (Cross-Origin Resource Sharing) — this lets
+# our React frontend (port 5173) talk to our Django backend
+# (port 8000) without being blocked by the browser.
+django-cors-headers==4.4.0
+
+# --- Authentication ---
+# Simple JWT provides JSON Web Token authentication.
+# When a user logs in, they get a token (like a digital
+# key card) that proves who they are on every request.
+djangorestframework-simplejwt==5.3.1
+
+# --- Database ---
+# psycopg2 is the PostgreSQL adapter for Python.
+# It lets Django talk to a PostgreSQL database.
+psycopg2-binary==2.9.9
+
+# --- Environment Variables ---
+# python-dotenv reads our .env file (which has secret keys
+# like database passwords) so they're never hardcoded.
+python-dotenv==1.0.1
+
+# --- PDF Processing ---
+# pdfplumber is the best library for extracting clean text
+# from PDF files. Much better than PyPDF2 for real resumes.
+pdfplumber==0.11.4
+
+# PyPDF2 as a fallback PDF reader
+PyPDF2==3.0.1
+
+# --- AI and NLP ---
+# spaCy is an industrial-strength NLP library.
+# We'll use it to extract skills, names, emails from resumes.
+spacy==3.7.5
+
+# Sentence Transformers converts text into numbers (vectors)
+# so we can mathematically compare how similar two texts are.
+# Great for matching resume to job description.
+sentence-transformers==3.0.1
+
+# Groq is a FREE and very fast AI API — we'll use it instead
+# of OpenAI to generate smart feedback. No cost!
+groq==0.9.0
+
+# --- Utilities ---
+# Pillow handles image processing (needed by some libraries)
+Pillow==10.4.0
+
+# Gunicorn is a production web server for Django.
+# It replaces Django's built-in dev server for deployment.
+gunicorn==22.0.0
+
+# Django Filter provides easy filtering for API list endpoints
+django-filter==24.2
+
+# Whitenoise serves static files efficiently in production
+whitenoise==6.7.0

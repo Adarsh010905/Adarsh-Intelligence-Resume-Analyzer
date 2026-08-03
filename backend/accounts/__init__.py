@@ -1,0 +1,1 @@
+"""accounts/__init__.py — accounts app package initializer"""
