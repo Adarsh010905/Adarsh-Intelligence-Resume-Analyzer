@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -o errexit
 
+echo "==> Installing Node.js..."
+curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+apt-get install -y nodejs
+
 echo "==> Building React frontend..."
 cd ../frontend
 npm install
@@ -14,4 +18,4 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 python manage.py collectstatic --noinput
 python manage.py migrate
-echo "==> Django setup complete."
+echo "==> All done!"
