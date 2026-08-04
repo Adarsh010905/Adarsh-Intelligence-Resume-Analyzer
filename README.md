@@ -85,9 +85,7 @@ npm run dev
 ```
 
 ### 4. Access the App
-- Frontend: http://localhost:5173
-- Backend API: http://localhost:8000
-- Admin Panel: http://localhost:8000/admin/
+- Link: (https://adarsh-intelligence.onrender.com/)
 
 ## 🐳 Docker (Run Everything at Once)
 
