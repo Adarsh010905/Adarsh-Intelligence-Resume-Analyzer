@@ -147,7 +147,7 @@ AI resume/
 
 ## 🎓 Learning Objectives
 
-By building this project, you learned:
+By building this project, I learned:
 - ✅ Django REST API with JWT authentication
 - ✅ Custom Django User model (email-based)
 - ✅ PostgreSQL with Django ORM
@@ -155,7 +155,6 @@ By building this project, you learned:
 - ✅ React Context API for state management
 - ✅ File uploads (PDF) in React + Django
 - ✅ NLP with spaCy and sentence-transformers
-- ✅ Prompt engineering for AI APIs
 - ✅ Docker containerization
 - ✅ Full-stack architecture and deployment
 
