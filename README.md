@@ -166,8 +166,6 @@ By building this project, I learned:
 4. Create PostgreSQL database on Render
 5. Deploy!
 
-See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed steps.
-
 ## 👤 Author
 
 Built as a learning project to master Python Full Stack Development.
